@@ -4,13 +4,14 @@ let user = prompt("Hello! What is your name?");
 console.log('Hi', user);
 document.write(`Hello ${user}, welcome to the site!`)
 
-if (user == 'joe') {
+let userLowercase = user.toLowerCase();
+if (userLowercase == 'joe') {
     alert('Joe is a cool name');
 }
-else if(user == 'sarah') {
+else if(userLowercase == 'sarah') {
     alert('Sarah is a nice name');
 }
-else if(user == 'jb') {
+else if(userLowercase == 'jb') {
     alert('JB is the instructor');
 }
 else {
