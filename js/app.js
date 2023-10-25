@@ -5,35 +5,29 @@ console.log('Hi', user);
 document.write(`Hello ${user}, welcome to the site!`)
 
 let userLowercase = user.toLowerCase();
-if (userLowercase == 'joe') {
-    alert('Joe is a cool name');
-}
-else if(userLowercase == 'sarah') {
-    alert('Sarah is a nice name');
-}
-else if(userLowercase == 'jb') {
-    alert('JB is the instructor');
+if (userLowercase == 'mark') {
+    alert('Mark is a cool name');
 }
 else {
-    alert('Your name is hard to guess');
+    alert('Welcome!');
 }
 
 
-let oneQuestion = prompt("What is the capital of Colorado?");
-console.log('You said the capital of Colorado is', oneQuestion);
+let oneQuestion = prompt("Is Denver the capital of Colorado? Answer yes/no").toLowerCase();
+console.log('You answered', oneQuestion);
 
-if (oneQuestion == 'denver') {
+if (oneQuestion == 'yes') {
     alert('Correct, Denver is the capital of Colorado');
 }
 else {
-    alert('That is not the capital of Colorado');
+    alert('Not correct');
 }
 
 
-let twoQuestion = prompt("Are you able to skateboard?");
-console.log('You said', twoQuestion ,'to skateboarding');
+let twoQuestion = prompt("Are you able to skateboard? Answer YES/NO").toUpperCase();
+console.log('You answered', twoQuestion);
 
-if (twoQuestion == 'yes') {
+if (twoQuestion == 'YES') {
     alert('That is impressive you know how to skateboard');
 }
 else if (twoQuestion != 'yes') {
@@ -41,26 +35,40 @@ else if (twoQuestion != 'yes') {
 }
 
 
-let threeQuestion = prompt("Can you code in javascript?");
-console.log('You said', threeQuestion ,'to coding in javascript');
+let threeQuestion = prompt("Was I a real estate agent before this? Answer yes/no").toLowerCase();
+console.log('You answered', threeQuestion ,);
 
 if (threeQuestion == 'yes') {
-    alert('Nice! You got this');
+    alert('That is true');
 }
-else if (twoQuestion == 'no') {
-    alert('No worries, keep practicing');
+else if (twoQuestion != 'yes') {
+    alert('Incorrect');
 }
 
 
-let fourQuestion = prompt("How many NFL teams are there?");
-console.log('You answered there are', fourQuestion ,'NFL teams');
+let fourQuestion = prompt("I have a bachelor's degree? Answer YES/NO").toUpperCase();
+console.log('You answered', fourQuestion);
 
-if (fourQuestion == '32') {
+if (fourQuestion == 'YES') {
     alert('Correct');
 }
-else if (fourQuestion == 'thirty two') {
-    alert('Correct');
+else if (fourQuestion == 'NO') {
+    alert('Incorrect');
 }
 else {
-    alert('Not quite');
+    alert('Wrong input');
+}
+
+
+let fiveQuestion = prompt("The Denver Nuggets are the best team in the NBA? Answer yes/no").toLowerCase();
+console.log('The Denver Nuggets are the best team:', fiveQuestion);
+
+if (fiveQuestion == 'yes') {
+    alert('Correct, they are the best')
+} 
+else if (fiveQuestion == 'no') {
+    alert('You know they are the best, do not lie');
+}
+else {
+    alert('Wrong input');
 }
