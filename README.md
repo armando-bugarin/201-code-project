@@ -1,2 +1,5 @@
 # 201-code-project
-lab 2
+
+## Screenshot of Lighthouse report
+
+![lighthouse report screenshot](Screenshot(2).png)
