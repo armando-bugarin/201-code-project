@@ -2,7 +2,7 @@
 
 ## Screenshot of Lighthouse report
 
-![lighthouse report screenshot - lab 2](Screenshot(2).png)
+![lighthouse-report](lighthouse-report.png)
 
 ## New Features Adding for Lab 3
 
