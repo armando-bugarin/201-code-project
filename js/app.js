@@ -74,4 +74,21 @@ else {
 }
 
 
-let sixQuestion = prompt("How many siblings do I have?");
+for (let i = 0; i < 4; i++) {
+    let sibling = prompt("How many siblings do I have?");
+    parseInt(sibling);
+    if (sibling == 2) {
+        alert('Correct');
+        break;
+    }
+    else if (sibling > 2) {
+        alert('Too High');
+    }
+    else if (sibling < 2) {
+        alert('Too Low');
+    }
+    else {
+        alert('Wrong, I have 2 siblings');
+    }
+    console.log('I have 2 siblings')
+}  
