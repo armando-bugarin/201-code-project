@@ -1,5 +1,5 @@
 `use strict`;
-
+/*
 let user = prompt("Hello! What is your name?");
 console.log('Hi', user);
 document.write(`Hello ${user}, welcome to the site!`)
@@ -72,23 +72,25 @@ else if (fiveQuestion == 'no') {
 else {
     alert('Wrong input');
 }
-
-
-for (let i = 0; i < 4; i++) {
-    let sibling = prompt("How many siblings do I have?");
-    parseInt(sibling);
-    if (sibling == 2) {
-        alert('Correct');
-        break;
+*/
+function numberSiblings() {
+    for (let guess = 0; guess < 4; guess++) {
+        let sibling = prompt("How many siblings do I have?");
+        let siblings = parseInt(sibling);
+        if (siblings == 2) {
+            alert('Correct');
+            break;
+        }
+        else if (siblings > 2) {
+            alert('Too High');
+        }
+         else /*if (siblings < 2)*/ {
+            alert('Too Low');
+        }
+        if (guess === 3) {
+            alert('Wrong, I have 2 siblings');
+        }
+        console.log('I have 2 siblings')
     }
-    else if (sibling > 2) {
-        alert('Too High');
-    }
-    else if (sibling < 2) {
-        alert('Too Low');
-    }
-    else {
-        alert('Wrong, I have 2 siblings');
-    }
-    console.log('I have 2 siblings')
-}  
+}
+numberSiblings();
