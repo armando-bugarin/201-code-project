@@ -72,3 +72,6 @@ else if (fiveQuestion == 'no') {
 else {
     alert('Wrong input');
 }
+
+
+let sixQuestion = prompt("How many siblings do I have?");
