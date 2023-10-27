@@ -92,3 +92,29 @@ for (let i = 0; i < 4; i++) {
     }
     console.log('I have 2 siblings')
 }  
+
+
+let cities = ["dubai", "bruges", "amsterdam", "cologne", "cambridge", "london"]
+let guessAttempt = 0
+let correctGuess = false;
+
+console.log(cities)
+
+while(guessAttempt < 6) {
+    guessAttempt++;
+    let citiesInput = prompt("What are my top 6 favorite cities in the world?");
+    console.log(citiesInput);
+    for(let i = 0; i < cities.length; i++) {
+        if (citiesInput === cities[i]) {
+            alert('You got it!');
+            correctGuess = true;
+            break;
+
+        } 
+    }
+    if (correctGuess) {
+        break;
+    } else {
+        alert('No, keep trying');
+    }
+}
