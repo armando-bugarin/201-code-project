@@ -102,7 +102,7 @@ console.log(cities)
 
 while(guessAttempt < 6) {
     guessAttempt++;
-    let citiesInput = prompt("What are my top 6 favorite cities in the world?");
+    let citiesInput = prompt("What is one of my favorite cities in the world?");
     console.log(citiesInput);
     for(let i = 0; i < cities.length; i++) {
         if (citiesInput === cities[i]) {
