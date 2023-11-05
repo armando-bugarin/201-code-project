@@ -1,7 +1,7 @@
 `use strict`;
+
 let userScore = 0;
 let user = prompt("Hello! What is your name?");
-console.log('Hi', user);
 document.write(`Hello ${user}, welcome to the site!`)
 
 let userLowercase = user.toLowerCase();
@@ -12,9 +12,8 @@ else {
     alert('Welcome!');
 }
 
-// question 1
+
 let oneQuestion = prompt("I was born in Denver. Is Denver the capital of Colorado? Answer yes/no").toLowerCase();
-console.log('You answered', oneQuestion);
 
 if (oneQuestion == 'yes') {
     alert('Correct, Denver is the capital of Colorado');
@@ -24,9 +23,8 @@ else {
     alert('Not correct');
 }
 
-// question 2
+
 let twoQuestion = prompt("Did I live in Las Vegas prior to moving to Kirkland? Answer YES/NO").toUpperCase();
-console.log('You answered', twoQuestion);
 
 if (twoQuestion == 'YES') {
     alert('Correct! Viva Las Vegas');
@@ -36,9 +34,8 @@ else if (twoQuestion != 'yes') {
     alert('incorrect!');
 }
 
-// question 3
+
 let threeQuestion = prompt("Was I a real estate agent before this? Answer yes/no").toLowerCase();
-console.log('You answered', threeQuestion ,);
 
 if (threeQuestion == 'yes') {
     alert('That is true');
@@ -48,9 +45,8 @@ else if (twoQuestion != 'yes') {
     alert('Incorrect');
 }
 
-// question 4
+
 let fourQuestion = prompt("I have a bachelor's degree? Answer YES/NO").toUpperCase();
-console.log('You answered', fourQuestion);
 
 if (fourQuestion == 'YES') {
     alert('Correct');
@@ -63,9 +59,8 @@ else {
     alert('Wrong input');
 }
 
-// question 5
+
 let fiveQuestion = prompt("The Denver Nuggets are the best team in the NBA? Answer yes/no").toLowerCase();
-console.log('The Denver Nuggets are the best team:', fiveQuestion);
 
 if (fiveQuestion == 'yes') {
     alert('Correct, they are the best')
@@ -79,7 +74,7 @@ else {
 }
 
 
-// question 6
+
 for (let i = 0; i < 4; i++) {
     let sibling = prompt("How many siblings do I have?");
     guessSiblings = parseInt(sibling);
@@ -97,21 +92,18 @@ for (let i = 0; i < 4; i++) {
     if (i === 3) {
         alert('Wrong, I have 2 siblings');
     }
-    console.log('I have 2 siblings')
 }  
 
 
-// question 7
+
 let cities = ["dubai", "bruges", "amsterdam", "cologne", "cambridge", "london"]
 let guessAttempt = 0
 let correctGuess = false;
 
-console.log(cities)
 
 while(guessAttempt < 6) {
     guessAttempt++;
     let citiesInput = prompt("What is one of my favorite cities in the world?");
-    console.log(citiesInput);
     for(let i = 0; i < cities.length; i++) {
         if (citiesInput === cities[i]) {
             alert('You got it!');
@@ -127,7 +119,5 @@ while(guessAttempt < 6) {
         alert('No, keep trying');
     }
 }
-
-// final score out of 7 questions
 
 alert(`You got ${userScore} correct out of 7`);

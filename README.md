@@ -11,3 +11,6 @@ In lab 3, adding a ordered list of a "top ten" for me. This "top ten" can be any
 ## Screenshot of Lighthouse Report Lab 3
 
 ![lighthouse-report-lab3](lighthouse-lab3.png)
+
+## Screen of Lighthouse Report Lab 5b
+![lighthouse-report-lab5b](lighthouse-lab5b.png)
